@@ -13,7 +13,7 @@ class ClienteController extends Controller
     {
       $cliente = Cliente::with('ubicacion')->first();
       return $cliente;
-      //return csrf_token();
+      return csrf_token();
     }
 
     public function store(Request $request)

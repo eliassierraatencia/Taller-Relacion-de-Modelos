@@ -22,4 +22,8 @@ class Cliente extends Model
     {
         return $this->hasOne('App\Models\Ubicacion');
     }
+    public function calificaciones()
+    {
+        return $this->morphMany('App\Models\Calificacion', 'scoreable');
+    }
 }

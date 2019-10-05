@@ -23,4 +23,8 @@ class Proveedor extends Model
     {
         return $this->hasManyThrough('App\Models\Caracteristica', 'App\Models\Producto');
     }
+    public function calificaciones()
+    {
+        return $this->morphMany('App\Models\Calificacion', 'scoreable');
+    }
 }

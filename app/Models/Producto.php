@@ -29,4 +29,8 @@ class Producto extends Model
     {
         return $this->hasMany('App\Models\Caracteristica');
     }
+    public function calificaciones()
+    {
+        return $this->morphMany('App\Models\Calificacion', 'scoreable');
+    }
 }

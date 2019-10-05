@@ -31,3 +31,12 @@ Route::post('/facturasync', 'FacturaController@storeSync');
 
 Route::get('/proveedorconsulta', 'ProveedorConsultaController@index');
 
+Route::get('/cliente/calificacion', 'CalificacionController@index');
+Route::post('/cliente/calificacion', 'CalificacionController@store');
+
+Route::get('/proveedor/calificacion', 'CalificacionController@index2');
+Route::post('/proveedor/calificacion', 'CalificacionController@store2');
+
+Route::get('/producto/calificacion', 'CalificacionController@index3');
+Route::post('/producto/calificacion', 'CalificacionController@store3');
+
